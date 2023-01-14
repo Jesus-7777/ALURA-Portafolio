@@ -190,7 +190,7 @@ xl -->extralarge ->1200(75em) ---------->1281res
 .contacto__imagen{
  width: 40%;
  height: auto ;
- background: url("/assets/img/telefono.png") no-repeat center / cover;
+ background: url("./assets/img/telefono.png") no-repeat center / cover;
  margin-right: 1rem;
 }
 .formulario__container{
