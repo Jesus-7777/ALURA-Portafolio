@@ -1,0 +1,107 @@
+.input-container {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ position: relative;
+ margin-bottom: 1.5rem;
+ box-sizing: border-box;
+}
+
+.input {
+ box-sizing: border-box;
+ border: none;
+ border-radius: 4px;
+ border-bottom: thin solid var(--gray-dark-color);
+ padding: 1.375rem 0.5rem 0.5rem;
+ font-size: var(--font-size-input);
+ height: 3.25rem;
+ width: 100%;
+}
+
+.input::placeholder {
+ visibility: hidden;
+ color: #00000000;
+}
+
+.input:focus {
+ outline: none;
+}
+
+.input:hover {
+ border-bottom: 3px solid var(--primary-color);
+}
+
+.input-label {
+ position: absolute;
+ top: 1.3750rem;
+ left: 0.5rem;
+ font-size: 1.250rem;
+ transition: all 0.25s;
+}
+
+.input:not(:placeholder-shown)+.input-label,
+.input:focus+.input-label {
+ font-size: 0.875rem;
+ top: 0.25rem;
+ transition: all 0.25s;
+}
+
+.input-menssage-error {
+ display: none;
+}
+.input-container--invalid {
+ margin-bottom: 0.5rem;
+}
+
+.input-container--invalid .input {
+ border: 1px solid var(--warning-color);
+ border-radius: 7px;
+}
+.input-container--invalid .input-label {
+ color: var(--warning-color);
+}
+.input-container--invalid .input-menssage-error {
+ color: var(--warning-color);
+ display: block;
+ margin-top: 0.5rem;
+ padding-left: 0.5rem;
+}
+
+.textarea {
+ box-sizing: border-box;
+ border: none;
+ border-radius: 4px;
+ border-bottom: thin solid var(--gray-dark-color);
+ padding: 1.375rem 0.5rem 0.5rem;
+ font-size: var(--font-size-input);
+ height: 20vh;
+ width: 100%;
+}
+
+.textarea:hover {
+ border-bottom: 3px solid var(--primary-color);
+}
+
+.textarea:focus {
+ outline: none;
+}
+.textarea::placeholder {
+ font-size: 1.250rem;
+ color: rgb(0, 0, 0,0.5)
+}
+.textarea-container--invalid {
+ margin-bottom: 0.5rem;
+}
+.textarea-container--invalid .textarea {
+ border: 1px solid var(--warning-color);
+}
+.textarea-container--invalid .textarea-label {
+ color: var(--warning-color);
+}
+.textarea-container--invalid .textarea-mensagem-erro {
+ display: block;
+ color: var(--warning-color);
+ margin-top: 0.5rem;
+ padding-left: 0.5rem;
+}
+

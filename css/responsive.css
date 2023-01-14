@@ -1,0 +1,202 @@
+/* 
+12 / 1 = 12
+12 / 2 = 6
+12 / 3 = 4
+12 / 4 = 3
+12 / 6 = 2
+12 / 12 = 1
+
+5 + 7 = 12
+2 + 5 + 5 = 12
+4 + 2 + 3 + 3 = 12
+
+?Mobile First se usa min-width que significa lo minimo, del valor que des hacia arriba 
+?Desktop First se usa max-width que significa lo maximo, del valor que des hacia abajo 
+
+sacar columnas de manera porcentual
+hcemos laegla de tres
+12 ----> 100%
+col? ----> ???
+
+Grid system artesanal conflexbox 12 columnnas
+Tamaños (Mediaqueries)
+
+xs -->extrasmall --->0 ------->479px -->480res
+sm -->small ------>480(30em)-->767px -->800res
+md -->medium ----->768(48em) ->991px -->1024res
+lg -->large ------>992(62em) ->1199px -->1280res
+xl -->extralarge ->1200(75em) ---------->1281res
+*/
+
+@media screen and (min-width:48em) {
+ .perfil__container {
+  display: flex;
+ }
+
+ .image__container {
+  order: 1;
+ }
+
+ .intro__perfil {
+  width: 80%;
+ }
+
+ .grid__container {
+  grid-gap: 8px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: dense;
+ }
+
+ .skill__titulo {
+  grid-column: span 3;
+  text-align: center;
+ }
+
+ .hobbies__titulo {
+  grid-column: span 3;
+  text-align: center;
+ }
+
+ .formacion__titulo {
+  grid-column: span 2;
+ }
+
+ .formacion__container {
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: dense;
+ }
+
+ .btn__mensaje {
+  width: 25%;
+ }
+}
+
+@media screen and (min-width:62em) {
+ .header__container {
+  width: 90%;
+  margin: 0 auto;
+ }
+
+ .logo__container {
+  width: 30%;
+ }
+
+ .header__nav {
+  width: 55%;
+  display: flex;
+  justify-content: space-evenly;
+ }
+
+ .navar__link {
+  font-weight: 400;
+  color: var(--fuente-negro-claro);
+ }
+
+ .navar__link:hover {
+  text-decoration: underline;
+ }
+
+ .link__contacto-nav {
+  width: 15%;
+  display: flex;
+  justify-content: flex-end;
+ }
+
+ .contenedor {
+  width: 90%;
+ }
+
+ .perfil__container {
+  justify-content: space-between;
+ }
+
+ .image__container {
+  width: 23rem;
+  height: 23rem;
+ }
+
+ .imagen__perfil {
+  width: 100%;
+  height: 90%;
+ }
+
+ .perfil__titulo {
+  font-weight: 700;
+  font-size: 3.250rem;
+  line-height: 3.813rem;
+  margin-bottom: 1.2rem;
+ }
+
+ .perfil__descripcion {
+  line-height: 2rem;
+  margin-bottom: 3rem;
+ }
+
+ .pages__link {
+  justify-content: flex-start;
+  gap: 1.5rem;
+ }
+
+ .descripcion__sobre {
+  width: 70%;
+ }
+
+ .grid__container {
+  grid-gap: 8px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-flow: dense;
+ }
+
+ .skill__titulo {
+  grid-column: span 5;
+  text-align: center;
+ }
+
+ .hobbies__titulo {
+  grid-column: span 5;
+  text-align: center;
+ }
+
+ .imagen__container {
+  height: 17.875rem;
+ }
+
+ .experiencia__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+ }
+
+ .experiencia__imagen-container {
+  width: 50%;
+  height: 40vh;
+ }
+ .titulo__curso{
+  width: 30%;
+ }
+.experiencia__imagen{
+ width: 100%;
+ height: 100%;
+}
+
+.contacto__container{
+ display: flex;
+}
+.titulos{
+ padding: 0;
+}
+.contacto__imagen{
+ width: 40%;
+ height: auto ;
+ background: url("/assets/img/telefono.png") no-repeat center / cover;
+ margin-right: 1rem;
+}
+.formulario__container{
+width: 60%;
+}
+.btn__mensaje {
+ width: 30%;
+}
+}

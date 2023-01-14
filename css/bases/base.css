@@ -1,0 +1,108 @@
+:root {
+ /*?  Colores */
+ --background-total: #F5F5F5;
+ --white-color: #FFF;
+ --gray-light-color: #EFF5F5;
+ --gray-color: #C0C0C0;
+ --gray-dark-color: #A9A9A9;
+ --black-color: #000000;
+ --link-color: #509EE3;
+ --primary-color: #0071ea;
+ --secondary-color: #d6eaff;
+ --contrast-dark-color: #4d4d4d;
+
+ --warning-color: #df2525;
+ --success-color: #047900;
+ --transparency-color: #4d4d4d33;
+
+ /*? Fuente */
+ --fuente-ceniza-claro: #666666;
+ --fuente-ceniza-oscuro: #4F4C4C;
+ --fuente-negro-claro: #333333;
+ --fuente-preto:#464646;
+
+
+
+ --shadow: 0 5px 10px #55a6ff38;
+
+ --raleway: "Raleway",sans-serif;
+
+ /*? Planes */
+ --section-color: #EAF2FD;
+
+ --background-btn: #2A7AE4;
+
+--font-size-input:1.1rem;
+
+ --max-width:1200px;
+ --header-height:3rem;
+}
+
+html {
+ box-sizing: border-box;
+ font-family: var(--raleway);
+ font-size: 16px;
+ scroll-behavior: smooth;
+ 
+}
+
+*,
+*::after,
+*::before {
+ box-sizing: inherit;
+}
+
+body {
+ font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1400 - 300)));
+ background-color: var(--background-total);
+}
+
+a {
+ text-decoration: none;
+ cursor: pointer;
+}
+
+
+h1{
+ margin: 0;
+ font-size: 2rem;
+}
+h2{
+ margin: 0;
+ font-size: 1.5rem;
+}
+h3{
+ margin: 0;
+ font-size: 1.25rem;
+}
+h4{
+ margin: 0;
+ font-size: 1rem;
+}
+h5{
+ margin: 0;
+ font-size: 0.85rem;
+ 
+}
+h6{
+ margin: 0;
+ font-size: 0.7rem;
+}
+
+
+ul,
+li {
+ padding: 0;
+ list-style: none;
+}
+
+img,
+video,
+iframe {
+ max-width: 100%;
+ height: auto;
+}
+
+p{
+ margin: 0;
+}
